@@ -23,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             displayTextView.text = number.toString()
         }
 
-        // TODO Step 3: Pass lambda to adapter
+        // Step 3: Pass lambda to adapter
+        recyclerView.adapter = NumberDisplayAdapter(numbers, onClickLambda)
     }
 
 }
